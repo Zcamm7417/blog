@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block navbar %}
+    {% include '_navbar.html' %}
+{% endblock %}
+{% block sub_content %}
+<div class="container text-left">
+    <h1 style = margin-left:127px;> {{blog['title']}} </h1>
+</div>
+<hr>
+<div class="container">
+    <p>{{blog['body'] | safe}}</p>
+</div>
+<hr>
+<div class="container text_left">
+    <p> Written by: {{blog['author']}} </p>
+</div>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block navbar %}
+    {% include '_navbar2.html' %}
+{% endblock %}
+{% block sub_content %}
+
+<div class="text-left">
+    <h1 style = margin-left:127px;> User Registration </h1>
+</div>
+<form class="form-horizontal" method="POST">
+    <div class="form-group">
+        <label class="control-label col-sm-2" for="first_name">First Name:</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" name="first_name" placeholder="Enter first name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="last_name">Last Name:</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" name="last_name" placeholder="Enter last name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="username">Username:</label>
+        <div class="col-sm-3">
+          <input type="text" class="form-control" name="username" placeholder="Enter username">
+        </div>
+      </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-3">
+        <input type="email" class="form-control" name="email" placeholder="Enter email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="password">Password:</label>
+      <div class="col-sm-3">
+        <input type="password" class="form-control" name="password" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="password">Confirm Password:</label>
+      <div class="col-sm-3">
+        <input type="password" class="form-control" name="confirm_password" placeholder="Confirm password">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-4">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-4">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form> 
+{% endblock %}
